@@ -31,7 +31,7 @@ late = statebased %>%
 
 earlydeaths <- sum(early$best)
 latedeaths <- sum(late$best)
-#calculate aggregate death tolls in the 3 years respectively to be displayed as values
+#calculate aggregate death tolls in the 2 years respectively to be displayed as values
 
 ggplot(data=statebased) +
   geom_line(mapping=aes(x=year, y=best), stat='summary', fun.y=sum) +
